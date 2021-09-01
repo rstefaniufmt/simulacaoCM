@@ -1,0 +1,35 @@
+!! filename=buadieno
+!
+!   GAMESS Calculation input file
+!   
+!
+ $CONTRL SCFTYP=RHF MAXIT=200 RUNTYP=HESSIAN
+         COORD=UNIQUE MULT=1 
+         ICHARG=0  
+         MOLPLT=.FALSE. PLTORB=.FALSE.  $END
+ $SYSTEM TIMLIM=2879 MWORDS=250  $END
+
+ $FORCE METHOD=SEMINUM NVIB=2 $END 
+ $STATPT OPTTOL=0.0005 NSTEP=999 $END
+ $STATPT IHREP=20 HSSEND=.TRUE.  $END
+
+ $BASIS  GBASIS=N31 NGAUSS=6
+         NDFUNC=1   NPFUNC=0  $END
+
+ $SCF    DIRSCF=.T. $END
+ $GUESS  GUESS=HUCKEL  $END
+
+ $DATA
+   
+  C1
+C     6.0    -0.58252     0.39679     0.19492
+C     6.0     0.59635    -0.38410    -0.08003
+C     6.0     0.60634    -1.72219    -0.05607
+C     6.0    -0.62009     1.70931    -0.04564
+H     1.0    -1.46191    -0.10432     0.59887
+H     1.0     1.51084     0.14165    -0.32905
+H     1.0    -0.28073    -2.30119     0.16721
+H     1.0     1.51390    -2.26646    -0.28161
+H     1.0     0.23045     2.23984    -0.46726
+H     1.0    -1.51338     2.29284     0.15494
+ $END
