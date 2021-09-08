@@ -1,0 +1,37 @@
+!! filename=phenol
+!
+!   GAMESS Calculation input file
+!   
+!
+ $CONTRL SCFTYP=RHF MAXIT=200 RUNTYP=OPTIMIZE
+         COORD=UNIQUE MULT=1 
+         ICHARG=0  
+         MOLPLT=.FALSE. PLTORB=.FALSE.  $END
+ $SYSTEM TIMLIM=2879 MWORDS=250  $END
+
+ $STATPT OPTTOL=0.0005 NSTEP=999 $END
+ $STATPT IHREP=20  $END
+
+ $BASIS  GBASIS=PM6 $END
+
+ $SCF    DIRSCF=.T. $END
+ $GUESS  GUESS=HUCKEL  $END
+
+ $DATA
+   
+  C1
+O     8.0    -2.37003    -0.02466    -0.00010
+C     6.0    -0.98859     0.01121    -0.00004
+C     6.0    -0.29557     1.22410    -0.00001
+C     6.0    -0.30921    -1.20189    -0.00004
+C     6.0     1.09888     1.21160    -0.00011
+C     6.0     1.08545    -1.20731    -0.00013
+C     6.0     1.78777    -0.00174    -0.00020
+H     1.0    -0.82150     2.17252     0.00009
+H     1.0    -0.86272    -2.13547    -0.00001
+H     1.0     1.64953     2.14722    -0.00014
+H     1.0     1.62331    -2.15045    -0.00016
+H     1.0     2.87365    -0.00800    -0.00032
+H     1.0    -2.70001     0.88992    -0.00045
+ $END
+

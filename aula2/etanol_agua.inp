@@ -1,0 +1,37 @@
+!! filename=ethanol
+!
+!   GAMESS Calculation input file
+!   
+!
+ $CONTRL SCFTYP=RHF MAXIT=200 RUNTYP=ENERGY
+         COORD=UNIQUE MULT=1 
+         ICHARG=0  
+         MOLPLT=.FALSE. PLTORB=.FALSE.  $END
+ $SYSTEM TIMLIM=2879 MWORDS=250  $END
+
+ $STATPT OPTTOL=0.0005 NSTEP=999 $END
+ $STATPT IHREP=20  $END
+
+ $BASIS  GBASIS=PM6 $END
+
+ $PCM  SOLVNT=H2O  $END
+
+ $SCF    DIRSCF=.T. $END
+ $GUESS  GUESS=HUCKEL  $END
+
+ $DATA
+   
+  C1
+O     8.0    -1.15167     0.27184    -0.01480
+C     6.0    -0.01448    -0.58512    -0.01837
+C     6.0     1.25628     0.24314    -0.01929
+H     1.0    -0.06146    -1.23385     0.86135
+H     1.0    -0.06350    -1.21383    -0.91174
+H     1.0     2.14241    -0.39786    -0.03697
+H     1.0     1.28208     0.90684    -0.88848
+H     1.0     1.30152     0.88119     0.86825
+H     1.0    -1.10923     0.81518     0.79088
+ $END
+
+
+! Customizations after this line are persisted when using Do More Calculations
