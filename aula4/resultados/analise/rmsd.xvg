@@ -1,0 +1,29 @@
+# This file was created Tue Oct  5 15:41:47 2021
+# Created by:
+#                       :-) GROMACS - gmx rms, 2016.4 (-:
+# 
+# Executable:   C:\GROMACS\BIN\gmx.exe
+# Data prefix:  C:\GROMACS
+# Working dir:  C:\gromacs\simu
+# Command line:
+#   gmx rms -s md_0_1.tpr -f md_0_1.xtc
+# gmx rms is part of G R O M A C S:
+#
+# Great Red Oystrich Makes All Chemists Sane
+#
+@    title "RMSD"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Protein after lsq fit to Protein"
+   0.0000000    0.0004997
+  10.0000000    0.1422990
+  20.0000000    0.1654425
+  30.0000000    0.1920885
+  40.0000000    0.2058308
+  50.0000000    0.2017122
+  60.0000000    0.2082600
+  70.0000000    0.2134440
+  80.0000000    0.2352286
+  90.0000000    0.2623492
+ 100.0000000    0.2677090

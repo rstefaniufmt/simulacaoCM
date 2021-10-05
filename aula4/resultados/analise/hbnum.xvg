@@ -1,0 +1,36 @@
+# This file was created Tue Oct  5 16:37:36 2021
+# Created by:
+#                      :-) GROMACS - gmx hbond, 2016.4 (-:
+# 
+# Executable:   C:\GROMACS\BIN\gmx.exe
+# Data prefix:  C:\GROMACS
+# Working dir:  C:\gromacs\simu
+# Command line:
+#   gmx hbond -f md_0_1.xtc -s md_0_1.tpr -num hbnum.xvg
+# gmx hbond is part of G R O M A C S:
+#
+# GROwing Monsters And Cloning Shrimps
+#
+@    title "Hydrogen Bonds"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Number"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Hydrogen bonds"
+@ s1 legend "Pairs within 0.35 nm"
+         0        2424        2700
+        10        2528        2740
+        20        2567        2750
+        30        2527        2832
+        40        2611        2731
+        50        2601        2786
+        60        2556        2789
+        70        2542        2707
+        80        2563        2727
+        90        2589        2708
+       100        2560        2705

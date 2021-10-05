@@ -1,0 +1,38 @@
+# This file was created Tue Oct  5 16:10:10 2021
+# Created by:
+#                      :-) GROMACS - gmx gyrate, 2016.4 (-:
+# 
+# Executable:   C:\GROMACS\BIN\gmx.exe
+# Data prefix:  C:\GROMACS
+# Working dir:  C:\gromacs\simu
+# Command line:
+#   gmx gyrate -s md_0_1.tpr -f md_0_1.xtc
+# gmx gyrate is part of G R O M A C S:
+#
+# Great Red Oystrich Makes All Chemists Sane
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     3.83866     2.20475     3.63783     3.37283
+        10     3.88321     2.23531     3.67592     3.41317
+        20     3.89085     2.24278     3.68313     3.41787
+        30     3.91367      2.2646     3.70738     3.42938
+        40     3.90245     2.26055     3.69353     3.42141
+        50     3.89655     2.25729     3.69016     3.41372
+        60     3.86817      2.2717      3.6553     3.37692
+        70      3.8805     2.28264     3.67101      3.3808
+        80     3.86845     2.29547     3.65616     3.36052
+        90     3.88714     2.30011     3.67402     3.38093
+       100     3.87152     2.28727     3.65565     3.37371

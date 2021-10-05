@@ -1,0 +1,35 @@
+# This file was created Tue Oct  5 16:04:46 2021
+# Created by:
+#                      :-) GROMACS - gmx energy, 2016.4 (-:
+# 
+# Executable:   C:\GROMACS\BIN\gmx.exe
+# Data prefix:  C:\GROMACS
+# Working dir:  C:\gromacs\simu
+# Command line:
+#   gmx energy -f md_0_1.edr
+# gmx energy is part of G R O M A C S:
+#
+# Getting the Right Output Means no Artefacts in Calculating Stuff
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  -6525765.500000
+   10.000000  -6525753.000000
+   20.000000  -6527149.500000
+   30.000000  -6526736.500000
+   40.000000  -6529643.000000
+   50.000000  -6534201.500000
+   60.000000  -6530482.000000
+   70.000000  -6528007.000000
+   80.000000  -6535997.000000
+   90.000000  -6526701.500000
+  100.000000  -6529585.500000
