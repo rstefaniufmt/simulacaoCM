@@ -1,0 +1,12 @@
+gmx genconf -f polystyrene.gro -nbox 3 3 3 -o filme.gro
+copy polystyrene.top filme.top
+gmx solvate -cp filme.gro -cs ./phenol.gro -o filme_solv.gro -p filme.top -maxsol 9
+gmx grompp -f em.mdp -c filme_solv.gro -p filme.top -o em.tpr
+gmx mdrun -v -deffnm em
+gmx grompp -f nvt.mdp -c em.gro -r em.gro -p filme.top -o nvt.tpr -maxwarn 2
+gmx mdrun -deffnm nvt -v
+gmx grompp -f md.mdp -c nvt.gro -t nvt.cpt -p filme.top -o md_0_1.tpr -maxwarn 3
+gmx mdrun -deffnm md_0_1 -v
+
+
+
