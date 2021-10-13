@@ -1,0 +1,44 @@
+; RUN CONTROL PARAMETERS
+	integrator               = md
+	tinit                    = 0
+	dt                       = 0.001     ; 1 femtosecond time step for integration
+	nsteps                   = 10000000    ; Make it 10ns to produce the traj.
+
+	; OUTPUT CONTROL OPTIONS
+	nstxout                  = 500000
+	nstvout                  = 500000
+	;nstfout                  = 100
+	;nstlog                   = 100
+	;nstenergy                = 100
+	;nstxtcout                = 100
+	xtc_precision            = 100
+	xtc-grps                 = System
+	energygrps               = System
+	; NEIGHBORSEARCHING PARAMETERS
+	nstlist                  = 10
+	ns-type                  = grid
+	pbc                      = xyz
+	rlist                    = 0.9
+
+	; OPTIONS FOR ELECTROSTATICS AND VDW
+	;coulombtype              = PME
+	rcoulomb                 = 1.0
+	fourierspacing           = 0.12
+	vdw-type                 = Cut-off
+	rvdw                     = 1.0
+
+	; Temperature coupling  
+	tcoupl                   = nose-hoover
+	tc-grps                  = system
+	tau_t                    = 0.2      
+	ref_t                    = 450
+
+	; Pressure coupling
+	Pcoupl                   = Berendsen
+	Pcoupltype               = Isotropic
+	tau_p                    = 0.5
+	compressibility          = 4.5e-5 4.5e-5 4.5e-5
+	ref_p                    = 1.01325 ;bar   
+
+	; OPTIONS FOR BONDS    
+	constraints              = none
