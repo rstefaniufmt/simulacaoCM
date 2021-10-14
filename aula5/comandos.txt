@@ -7,6 +7,8 @@ gmx grompp -f nvt.mdp -c em.gro -r em.gro -p filme.top -o nvt.tpr -maxwarn 2
 gmx mdrun -deffnm nvt -v
 gmx grompp -f md.mdp -c nvt.gro -t nvt.cpt -p filme.top -o md_0_1.tpr -maxwarn 3
 gmx mdrun -deffnm md_0_1 -v
+REM ANALISE DE DADOS
+gmx energy -f em.edr -o potential.xvg 
 
 
 
