@@ -18,15 +18,13 @@
 
 ; inclui topologia do poliestireno
 #include "polystyrene.itp"
-#include "phenol.itp"
-
 
 [ system ]
 ; Name
-POLYSTYRENE FILM with Phenol
+POLYSTYRENE FILM
 
 [ molecules ]
 ; Compound        #mols
-STY     27
+STY     1
 
 
