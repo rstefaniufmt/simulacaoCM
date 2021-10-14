@@ -1,0 +1,19 @@
+Para esta tarefa, vocês irão simular:
+1) uma molécula do polímero PVA (100 meros) com dez moléculas da micromolécula ativa quercetina.
+2) um filme de PVA (100 meros) em uma caixa (3x3x3) solvatada com água (SPC)
+
+Os arquivos .mol nnecessários serão colocado aqui até o dia 18 de outubro, assim como os arquivos .mdp
+
+A topologia de ambas as moléculas vocês terão que gerar no SwissParam ou no PRODRG
+
+As simulações serão feitas com o tempo de 5 ns.
+Vocês deverão entregar as análises da seguinte forma:"
+Uma imagem final da molécula solvatada (com solvente) ou em interação com a quercetina. Usar o pymol ou outro programa de sua preferencia.
+
+Gráfico Equilibrio de temperatura
+Gráfico Equilibrio de pressão
+Gráfico minimização
+Grafico RMSD
+Gráfico gyration
+Grafico eneria de interação entre a quercetina e o PVs. Seguir o tutorial em: http://www.mdtutorials.com/gmx/complex/09_analysis.html , seção "Protein-Ligand Interaction Energy"
+Entregar até dia 12 de novembro por email.
