@@ -9,6 +9,7 @@ gmx grompp -f md.mdp -c nvt.gro -t nvt.cpt -p filme.top -o md_0_1.tpr -maxwarn 3
 gmx mdrun -deffnm md_0_1 -v
 REM ANALISE DE DADOS
 gmx energy -f em.edr -o potential.xvg 
+gmx energy -f nvt.edr -o temperature.xvg
 
 
 
