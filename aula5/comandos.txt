@@ -11,6 +11,8 @@ REM ANALISE DE DADOS
 gmx energy -f em.edr -o potential.xvg 
 gmx energy -f nvt.edr -o temperature.xvg
 gmx energy -f nvt.edr -o density.xvg
+gmx trjconv -s md_0_1.tpr -f md_0_1.xtc -o md_0_10_center.xtc -center -pbc mol -ur compact
+
 
 
 
