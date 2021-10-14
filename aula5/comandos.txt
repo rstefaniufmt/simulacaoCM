@@ -10,6 +10,7 @@ gmx mdrun -deffnm md_0_1 -v
 REM ANALISE DE DADOS
 gmx energy -f em.edr -o potential.xvg 
 gmx energy -f nvt.edr -o temperature.xvg
+gmx energy -f nvt.edr -o density.xvg
 
 
 
