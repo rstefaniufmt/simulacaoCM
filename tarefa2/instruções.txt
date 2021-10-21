@@ -5,4 +5,4 @@ Vocês deverão entregar as análises da seguinte forma:
 Uma imagem final da molécula solvatada (com solvente). Usar o pymol ou outro programa de sua preferencia.
 Grafico RMSD
 Gráfico gyration
-Entregar até dia 29 de outubro por email.
+Entregar até dia 5 de novembro por email.
