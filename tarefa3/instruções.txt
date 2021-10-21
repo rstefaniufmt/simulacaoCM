@@ -15,5 +15,5 @@ Gráfico Equilibrio de pressão
 Gráfico minimização
 Grafico RMSD
 Gráfico gyration
-Grafico eneria de interação entre a quercetina e o PVs. Seguir o tutorial em: http://www.mdtutorials.com/gmx/complex/09_analysis.html , seção "Protein-Ligand Interaction Energy"
-Entregar até dia 12 de novembro por email.
+Grafico energia de interação entre a quercetina e o PVA. Seguir o tutorial em: http://www.mdtutorials.com/gmx/complex/09_analysis.html , seção "Protein-Ligand Interaction Energy"
+Entregar até dia 19 de novembro por email.
