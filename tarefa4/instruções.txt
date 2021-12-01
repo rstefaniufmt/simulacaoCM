@@ -1,0 +1,12 @@
+Esta é a tarefa final desta disciplina. A tarefa é criar um modelo de Machine Learning para prever e/ou modelar propriedades de materiais usando as 
+ferramentas pyMatgen, Matminer, Citrine, pyMKS, scikit-learn, autominer, TensorFlow ou uma combinação de várias delas (não necessariamente todas).
+
+Vocês deverão escolher um conjunto de dados do Citrine (ctrination.com). Na aba Datasets, escolha o Dataset que mais achar últil. Atenção para não escolher Datasets
+com poucos dados (com menos de 150 registros) ou enormes (com mais de 10.000 registros). No primeiro caso, vocês não conseguirão criar um bom modelo, no segundo, o modelo
+provavelmente levará muito tempo para ser desenvolvido. A coluna 'Record Count' traz o número de registros em cada dataset.
+
+Após aescolha do Dataset, use os Notebooks das aulas sobre Matminer/machine learning como modelo para criar o seu próprio. Crie um Jupyter Notebook ou um script em Python.
+
+Enviar o notebook ou o Script por e-mail para avaliação.
+
+Prazo final: 17 de dezembro.
